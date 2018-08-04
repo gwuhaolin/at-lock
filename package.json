@@ -1,0 +1,24 @@
+{
+  "name": "at-lock",
+  "version": "1.0.3",
+  "main": "lib/index",
+  "typings": "lib/index",
+  "scripts": {
+    "test": "jest",
+    "prepublish": "rm -rf lib && tsc --outDir lib --declaration"
+  },
+  "devDependencies": {
+    "@types/jest": "^23.3.1",
+    "jest": "^23.4.2",
+    "ts-jest": "^23.1.2",
+    "typescript": "^3.0.1"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
+    "moduleFileExtensions": ["ts", "tsx", "js", "jsx", "json", "node"]
+  }
+}
